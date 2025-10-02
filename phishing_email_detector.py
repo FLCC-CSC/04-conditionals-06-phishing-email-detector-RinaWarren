@@ -16,14 +16,14 @@
 ########## ENTER YER CODE BELOW THIS LINE ##########
 
 subject_line = input('Enter the email subject line: ')
-subject_line_any= subject_line.casefold()
+
 print('\nSECURITY ASSESSMENT:')
 
-if 'Urgent' in subject_line_any or 'immediate action requred' in subject_line_any:
+if 'Urgent' in subject_line.casefold() or 'immediate action requred' in subject_line.casefold():
     print('HIGH RISK: Possible phishing attempt')
-elif 'win' in subject_line_any or 'Free' in subject_line_any:
+elif 'win' in subject_line.casefold() or 'Free' in subject_line.casefold():
     print('MEDIUM RISK: Suspicious offer detected.')
-elif 'password reset' in subject_line_any:
+elif 'password reset' in subject_line.casefold():
     print('LOW RISK: Verify legitimacy with sender.')
 else:
     print('No phishing indicators detected.')
