@@ -20,7 +20,7 @@ subject_line = input('Enter the email subject line: ')
 
 print('\nSECURITY ASSESSMENT:')
 
-if "urgent" in subject_line.lower() or "immediate action required" in subject_line.lower():
+if "urgent" in subject_line.lower() or "immediate" in subject_line.lower() or "action required" in subject_line.lower():
     print('HIGH RISK: Possible phishing attempt')
 elif "free" in subject_line.lower() or "win" in subject_line.lower():
     print('MEDIUM RISK: Suspicious offer detected.')
