@@ -16,20 +16,19 @@
 ########## ENTER YER CODE BELOW THIS LINE ##########
 
 subject_line = input('Enter the email subject line: ')
+#print subject_line.lower()
 
 print('\nSECURITY ASSESSMENT:')
-high = 'urgent' and 'immediate action required'
-med = 'free' and 'win'
-low = 'password reset'
 
-if high.casefold() in subject_line.casefold():
-    print('HIGH RISK: Possible phishing attempt.')
-elif med.casefold() in subject_line.casefold():
+if "urgent" in subject_line.lower() or "immediate action required" in subject_line.lower():
+    print('HIGH RISK: Possible phishing attempt')
+elif "free" in subject_line.lower() or "win" in subject_line.lower():
     print('MEDIUM RISK: Suspicious offer detected.')
-elif low.casefold() in subject_line.casefold(): 
+elif "password reset" in subject_line.lower():
     print('LOW RISK: Verify legitimacy with sender.')
 else:
     print('No phishing indicators detected.')
+
 print('------------------------')
 print(f'Analyzed Subject: \"{subject_line}\"')
 
@@ -87,6 +86,7 @@ Analyzed subject: "Did you request a password reset?"
 '''
 
 1. Was using `in` difficult or was it natural?
+the In was natural. the or made me want to fight someone though.
 
 
 
