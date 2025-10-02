@@ -86,7 +86,7 @@ Analyzed subject: "Did you request a password reset?"
 '''
 
 1. Was using `in` difficult or was it natural?
-the In was natural. the or made me want to fight someone though.
+the 'in' was natural. the 'or' made me want to fight someone though.
 
 
 
