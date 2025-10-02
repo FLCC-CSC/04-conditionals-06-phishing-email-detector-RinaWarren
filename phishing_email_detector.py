@@ -20,7 +20,8 @@ subject_line = input('Enter the email subject line: ')
 
 print('\nSECURITY ASSESSMENT:')
 
-if "urgent" in subject_line.lower() or "immediate" in subject_line.lower() or "action required" in subject_line.lower():
+
+if "urgent" in subject_line.lower() or "immediate action required" in subject_line.lower:
     print('HIGH RISK: Possible phishing attempt.')
 elif "free" in subject_line.lower() or "win" in subject_line.lower():
     print('MEDIUM RISK: Suspicious offer detected.')
@@ -30,7 +31,7 @@ else:
     print('No phishing indicators detected.')
 
 print('------------------------')
-print(f'Analyzed Subject: \"{subject_line}\"')
+print(f'Analyzed subject: \"{subject_line}\"')
 
 
 ########### END YER CODE ABOVE THIS LINE ###########
@@ -108,7 +109,7 @@ Please gauge your utilization of AI on the following spectrum. Place an "X" in f
 of the appropriate response. Only choose one of the following:
 
 [ ] I did not use AI at all for this lab.
-[ ] I wrote the initial draft of the software but had AI help me make it better.
+[ x] I wrote the initial draft of the software but had AI help me make it better.
 [ ] I fed the lab description to AI and had it generate a response but I modified it.
 [ ] AI created the entire program for me.
 
@@ -120,7 +121,7 @@ like AI and internet sites like Chegg, CourseHero, StackOverflow, and general Go
 may impede your understanding. Please rate how well you understand the concepts in this lab: 
 
 [ ] I understand very little about this lab.
-[ ] I am about 50/50 on this lab; I get parts of it but not the whole picture.
+[x ] I am about 50/50 on this lab; I get parts of it but not the whole picture.
 [ ] I pretty much get it.
 [ ] I'm solid. Totally got it.
 
